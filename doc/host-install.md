@@ -86,6 +86,11 @@ sudo apt install lxc lxc-templates wget bridge-utils
 - [MailSpring](https://getmailspring.com/) ** only if thunderbird is not fine ;)
 - [WunderList](https://github.com/edipox/wunderlistux/releases)
 
+## Software we can search in the Gui App Manager
+- shutter (awesome screenshot tool with dropbox sharing)
+- slack
+- filezilla
+
 ## Software apt install
 
 #### peek - screen recorder
