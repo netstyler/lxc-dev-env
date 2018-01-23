@@ -24,5 +24,7 @@ wget https://raw.githubusercontent.com/oskarkrawczyk/honukai-iterm-zsh/master/ho
 ### Install tweaked oh-my-zsh config
 ```
 cd ~
-wget https://raw.githubusercontent.com/oskarkrawczyk/honukai-iterm-zsh/master/honukai.zsh-theme
+wget https://raw.githubusercontent.com/netstyler/lxc-dev-env/master/doc/templates/host/oh-my-zsh/.zshrc
 ```
+
+If done restart the terminal to get the changes affected.
