@@ -9,6 +9,9 @@ $config->{'lxc'}{'addr'} = '172.16.0.1';
 $config->{'lxc'}{'netmask'} = '255.255.255.0';
 $config->{'lxc'}{'network'} = '172.16.0.0/24';
 
+$config->{'lxc'}{'vm'}{'wa-sys-00'}{'ip'} = '172.16.0.9';
+$config->{'lxc'}{'vm'}{'wa-sys-00'}{'roles'} = 'wa';
+
 $config->{'lxc'}{'vm'}{'wa-lb-00'}{'ip'} = '172.16.0.10';
 $config->{'lxc'}{'vm'}{'wa-lb-00'}{'roles'} = 'wa,loadbalancer';
 
