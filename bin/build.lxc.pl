@@ -120,5 +120,6 @@ lxc.network.ipv4.gateway = 172.16.0.1
 
 lxc.mount.entry = /home home none bind,rw 0 0
 lxc.mount.entry = /mnt/projects mnt/projects none bind,rw 0 0
+lxc.mount.entry = /mnt/projects/PSA/wa-network opt/wa-network none bind,ro 0 0
 
 lxc.start.auto = 1
