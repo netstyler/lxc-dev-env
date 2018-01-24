@@ -26,8 +26,8 @@ $config->{'lxc'}{'vm'}{'wa-dev-mysql'}{'ip'} = '172.16.0.10';
 $config->{'lxc'}{'vm'}{'wa-dev-mysql'}{'roles'} = 'wa,db,db-master';
 
 
-$config->{'lxc'}{'vm'}{'wa-dev-elasticsearch'}{'ip'} = '172.16.0.12';
-$config->{'lxc'}{'vm'}{'wa-dev-elasticsearch'}{'roles'} = 'wa,elasticsearch';
+$config->{'lxc'}{'vm'}{'wa-dev-elastic'}{'ip'} = '172.16.0.12';
+$config->{'lxc'}{'vm'}{'wa-dev-elastic'}{'roles'} = 'wa,elasticsearch';
 
 
 
