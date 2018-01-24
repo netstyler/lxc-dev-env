@@ -18,6 +18,16 @@ $config->{'lxc'}{'vm'}{'wa-session-00'}{'roles'} = 'wa,redis,wa-session';
 $config->{'lxc'}{'vm'}{'wa-cache-00'}{'ip'} = '172.16.0.12';
 $config->{'lxc'}{'vm'}{'wa-cache-00'}{'roles'} = 'wa,redis,wa-cache';
 
+$config->{'lxc'}{'vm'}{'wa-db-master'}{'ip'} = '172.16.0.13';
+$config->{'lxc'}{'vm'}{'wa-db-master'}{'roles'} = 'wa,db,db-master';
+
+
+$config->{'lxc'}{'vm'}{'wa-search-00'}{'ip'} = '172.16.0.14';
+$config->{'lxc'}{'vm'}{'wa-search-00'}{'roles'} = 'wa,elasticsearch';
+
+$config->{'lxc'}{'vm'}{'wa-app-00'}{'ip'} = '172.16.0.15';
+$config->{'lxc'}{'vm'}{'wa-app-00'}{'roles'} = 'wa,wa-app';
+
 
 
 

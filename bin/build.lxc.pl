@@ -7,9 +7,14 @@ BEGIN {
         require 'lxcde.conf.pl';
 }
 
+my $pwuid = getpwuid( $< );
+if ($pwuid  ne 'root' ) {
+	die("Please run this script as sudo");
+}
+
 use Data::Dumper;
 # print Dumper($config);
-$vm = $ARGV[0];
+$vm = $ARGV[0] || die "Please provide the vm name\n";
 
 
 $vm_config = $config->{'lxc'}{'vm'}{$vm};
@@ -48,7 +53,7 @@ close("F");
 
 
 
-print Dumper(\@roles);
+# print Dumper(\@roles);
 
 open "F", ">/tmp/$vm.config";
 print F $data;
@@ -79,7 +84,7 @@ push @cmd, "lxc-start -d -n $vm";
 
 foreach(@cmd){
 	print "$_\n";
-	# system ($_);
+	system ($_);
 }
 
 
