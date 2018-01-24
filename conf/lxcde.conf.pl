@@ -28,6 +28,9 @@ $config->{'lxc'}{'vm'}{'wa-search-00'}{'roles'} = 'wa,elasticsearch';
 $config->{'lxc'}{'vm'}{'wa-app-00'}{'ip'} = '172.16.0.15';
 $config->{'lxc'}{'vm'}{'wa-app-00'}{'roles'} = 'wa,wa-app';
 
+$config->{'lxc'}{'vm'}{'wa-mailhog'}{'ip'} = '172.16.0.16';
+$config->{'lxc'}{'vm'}{'wa-mailhog'}{'roles'} = 'wa,mailhog';
+
 
 
 
