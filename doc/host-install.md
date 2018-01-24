@@ -107,3 +107,12 @@ sudo wget -O - https://dl.sinew.in/keys/enpass-linux.key | apt-key add -
 sudo apt update
 sudo apt install enpass
  ```
+ 
+ 
+#### redis-cli
+sudo apt install redis-tools
+
+#### mysql-cli
+sudo apt install mariadb-client
+
+
