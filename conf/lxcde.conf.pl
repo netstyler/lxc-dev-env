@@ -12,6 +12,9 @@ $config->{'lxc'}{'network'} = '172.16.0.0/24';
 $config->{'lxc'}{'vm'}{'wa-dev-consul'}{'ip'} = '172.16.0.2';
 $config->{'lxc'}{'vm'}{'wa-dev-consul'}{'roles'} = 'wa';
 
+$config->{'lxc'}{'vm'}{'wa-dev-sys'}{'ip'} = '172.16.0.3';
+$config->{'lxc'}{'vm'}{'wa-dev-sys'}{'roles'} = 'wa';
+
 $config->{'lxc'}{'vm'}{'wa-dev-lb'}{'ip'} = '172.16.0.10';
 $config->{'lxc'}{'vm'}{'wa-dev-lb'}{'roles'} = 'wa,loadbalancer';
 
