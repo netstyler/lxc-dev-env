@@ -21,20 +21,17 @@ $config->{'lxc'}{'vm'}{'wa-dev-mailhog'}{'roles'} = 'wa,mailhog';
 $config->{'lxc'}{'vm'}{'wa-dev-redis'}{'ip'} = '172.16.0.5';
 $config->{'lxc'}{'vm'}{'wa-dev-redis'}{'roles'} = 'wa,redis';
 
-
 $config->{'lxc'}{'vm'}{'wa-dev-mysql'}{'ip'} = '172.16.0.10';
 $config->{'lxc'}{'vm'}{'wa-dev-mysql'}{'roles'} = 'wa,db,db-master';
-
 
 $config->{'lxc'}{'vm'}{'wa-dev-elastic'}{'ip'} = '172.16.0.12';
 $config->{'lxc'}{'vm'}{'wa-dev-elastic'}{'roles'} = 'wa,elasticsearch';
 
-
-
-
 $config->{'lxc'}{'vm'}{'wa-dev-wa-app'}{'ip'} = '172.16.0.15';
 $config->{'lxc'}{'vm'}{'wa-dev-wa-app'}{'roles'} = 'wa,wa-app';
 
+$config->{'lxc'}{'vm'}{'wa-dev-wa-app-admin'}{'ip'} = '172.16.0.16';
+$config->{'lxc'}{'vm'}{'wa-dev-wa-app-admin'}{'roles'} = 'wa,wa-app';
 $config->{'lxc'}{'vm'}{'wa-dev-fr-test'}{'ip'} = '172.16.0.20';
 $config->{'lxc'}{'vm'}{'wa-dev-fr-test'}{'roles'} = 'wa';
 
