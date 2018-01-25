@@ -14,7 +14,15 @@ if ($pwuid  ne 'root' ) {
 
 use Data::Dumper;
 # print Dumper($config);
-$vm = $ARGV[0] || die "Please provide the vm name\n";
+$vm = $ARGV[0];
+
+if (!$vm){
+	print "Please provide the vm name\n\n";
+	print "Possible vm names as defined in the config:\n\n";
+	print join ("\n", keys $config->{'lxc'}{'vm'});
+	print "\n";
+	exit;
+} 
 
 
 $vm_config = $config->{'lxc'}{'vm'}{$vm};
@@ -33,6 +41,21 @@ $vm_dir = "$base_dir/$vm";
 $root_fs = "$vm_dir/rootfs";
 $template_name = $config->{'lxc'}{'base_image'};
 $template_directory = "$base_dir/$template_name";
+
+
+if (-f $config_file){
+	
+	print "The config for this vm already exists.\n\n
+	Do you want me to rebuild this machine?\n
+	Type yes if you want me to: \n";
+	my $input = <STDIN>;
+	chomp $input;
+	if ($input ne 'yes'){
+		print "You typed: $input\n";
+		die("Quitting now\n");
+	}
+	
+}
 
 
 $data = join ("", <DATA>);
