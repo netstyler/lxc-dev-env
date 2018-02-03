@@ -108,6 +108,11 @@ sudo apt update
 sudo apt install enpass
  ```
  
+ #### docky osx like dock
+ ```
+sudo add-apt-repository ppa:ricotz/docky
+sudo apt-get update
+sudo apt-get install docky
  
 #### redis-cli
 sudo apt install redis-tools
