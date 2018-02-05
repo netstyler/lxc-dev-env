@@ -23,6 +23,17 @@ The last IP will be used by the base-template ( 172.16.0.254 )
 # copy the users and groups from the host
 > cp -av /etc/passwd* /etc/shadow* /etc/group* /etc/gshadow* /var/lib/lxc/ubuntu-16/rootfs/etc/
 
+# map the falk user to appuser
+```
+perl -pi -e 's!falk!appgroup!g' /etc/group
+
+perl -pi -e 's!falk!appuser!g' /etc/passwd
+perl -pi -e 's!falk!appuser!g' /etc/passwd-
+perl -pi -e 's!falk!appuser!g' /etc/shadow
+perl -pi -e 's!falk!appuser!g' /etc/shadow-
+
+check if the user is changed: id appuser
+```
 
 ## Attach a console to this vm (note the VM has no password and none is needed)
 > lxc-attach -n ubuntu-16
