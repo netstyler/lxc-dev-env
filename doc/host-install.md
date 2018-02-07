@@ -79,6 +79,8 @@ This allows to make code changes on the host and reflect them on the lxc machine
 ### Basic LXC packages
 ```
 sudo apt install lxc lxc-templates wget bridge-utils
+
+iptables -t nat -A POSTROUTING -s '172.16.0.0/24' -o wlp3s0 -j MASQUERADE
 ```
 
 
