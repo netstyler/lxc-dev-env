@@ -36,6 +36,9 @@ $config->{'lxc'}{'vm'}{'wa-dev-wa-app'}{'roles'} = 'wa,wa-app';
 $config->{'lxc'}{'vm'}{'wa-dev-wa-app-admin'}{'ip'} = '172.16.0.16';
 $config->{'lxc'}{'vm'}{'wa-dev-wa-app-admin'}{'roles'} = 'wa,wa-app';
 
+$config->{'lxc'}{'vm'}{'wa-dev-own-cloud'}{'ip'} = '172.16.0.19';
+$config->{'lxc'}{'vm'}{'wa-dev-own-cloud'}{'roles'} = 'wa';
+
 $config->{'lxc'}{'vm'}{'wa-dev-fr-test'}{'ip'} = '172.16.0.20';
 $config->{'lxc'}{'vm'}{'wa-dev-fr-test'}{'roles'} = 'wa';
 
