@@ -1,5 +1,11 @@
 # Howto install needed basics on the host machine
 
+## Add user to sudoers
+```
+nano /etc/sudoers
+falk ALL=(root:root) NOPASSWD: ALL
+```
+
 ## Basic packages
 ```
 sudo apt install curl git unzip htop tmux zsh software-properties-common build-essential
