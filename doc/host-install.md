@@ -49,7 +49,7 @@ git clone git@github.com:World-Architects/WA3.git  ~/projects/WA3
 ```
 sudo add-apt-repository ppa:ondrej/php
 sudo apt update
-sudo apt install php7.2-cli php7.2-mysql php7.2-intl php7.2-curl php7.2-gd php7.2-json php-imagick php7.2-mbstring php7.2-zip php7.2-xml php-redis php7.2-sqlite3
+sudo apt install php7.4-cli php7.4-mysql php7.4-intl php7.4-curl php7.4-gd php7.4-json php-imagick php7.4-mbstring php7.4-zip php7.4-xml php-redis php7.4-sqlite3
 sudo apt install composer php-codesniffer phpunit
 ```
 
